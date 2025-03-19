@@ -1,0 +1,21 @@
+now: 1698761234000, last: 0, diff: 1698761234000, delay: 1000
+Executing function...
+Function executed!
+so in first case now-last<delay => false diff> delay
+so update the last
+
+
+
+
+now: 1698761234500, last: 1698761234000, diff: 500, delay: 1000
+Throttled: Function not executed
+Now if triggered before delay
+diff (now -last) < delay hence funciton return no callback executed
+
+
+now: 1698761235000, last: 1698761234000, diff: 1000, delay: 1000
+Executing function...
+Function executed!
+
+now: 1698761235500, last: 1698761235000, diff: 500, delay: 1000
+Throttled: Function not executed
